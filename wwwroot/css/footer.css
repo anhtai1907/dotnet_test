@@ -1,0 +1,176 @@
+#footer a
+{
+    text-decoration: none;
+}
+#footer ul
+{
+    list-style-type: none;
+}
+.footer_brand_slide
+{
+    border-bottom: 2px solid #222;
+    border-top: 2px solid #222;
+}
+.footer_brand_slide ul
+{
+    
+}
+.footer_brand_slide ul li
+{
+    float: left;
+    
+}
+.footer_brand_slide>.max-width>ul>li>a
+{
+    background-image: url(../image/brand-type-film-footer.png);
+    background-repeat: no-repeat;
+    height: 40px;
+    text-indent: -9999px;
+    display: block;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+#dx{
+    background-position: 10px 0;
+    width: 110px;
+}
+#imax
+{
+    background-position: -694px -2px;
+    width : 115px;
+}
+#starium{
+    background-position: -960px -2px;
+    width : 120px; 
+}
+#goldclass{
+    background-position: -827px -2px;
+    width : 130px; 
+}
+#lamour{
+    background-position: -1095px -2px;
+    width : 140px; 
+}
+#dolby_atmos{
+    background-position: -114px -2px;
+    width : 140px; 
+}
+#premium_cinema{
+    background-position: -1260px -2px;
+    width : 90px; 
+}
+#creen{
+    background-position: -1345px -2px;
+    width : 155px; 
+}
+.footer_content
+{
+    padding: 30px 0px;
+    border-bottom: 2px solid #222;
+}
+.footer_content_first{
+    float: left;
+    margin-right: 65px;
+}
+.footer_content_second{
+    float: left;
+    margin-right: 65px;
+}
+.footer_content_third{
+    float: left;
+    margin-right: 65px;
+}
+.footer_content_finaly{
+    float: right;
+    width: 255px;
+    margin-right: 0px;
+}
+.footer_content h3
+{
+    color: #636363;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer_content a,.footer_content p
+{
+    color: #636363;
+    font-size: 15px;
+    line-height: 22px;
+}
+.follow_us
+{
+    height: 40px;
+}
+.follow_us>li
+{
+    float: left;
+    margin-right: 5px;
+}
+.follow_us>li>a
+{
+    background-image: url(../image/bg-social-footer-40.png);
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    display: block;
+}
+.follow_fb
+{
+    height: 37px;
+    width: 37px;
+    background-position: -9px -4px;
+}
+.follow_yt
+{
+    height: 37px;
+    width: 37px;
+    background-position: -55px -3px;
+}
+.follow_line
+{
+    height: 37px;
+    width: 38px;
+    background-position: -145px -4px;
+}
+.follow_instagram
+{
+    height: 37px;
+    width: 37px;
+    background-position: -99px -4px;
+}
+.follow_zl
+{
+    height: 37px;
+    width: 37px;
+    background-position: -193px -4px;
+}
+.bo_cong_thuong
+{
+    background: url(../image/cong-thuong.png) 
+    no-repeat scroll top left transparent;
+    text-indent: -9999px;
+    display: block;
+    height: 70px;
+    margin-left: 5px;
+}
+#cgv_address{
+    padding: 10px 0px;
+}
+#CGV_address_right
+{
+    width: 830px;
+    float: left;
+}
+#CGV_address_right>p
+{
+    color: #636363;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: normal;
+}
+#CGV_address_right>h3
+{
+  color: #636363;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
