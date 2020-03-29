@@ -3,46 +3,166 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - aspnetapp</title>
+    <title>@ViewData["Title"] - hello Thảo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @* <link rel="stylesheet" href="~/css/site.css" /> *@
+    <link rel="stylesheet" href="~/css/header.css">
+    <link rel="stylesheet" href="~/css/footer.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">aspnetapp</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    <div class="page-header" style="background-color: #66b99a;">
+            <div class="max-width" id="page-header-content">
+                <div id="page-header-content-logo">T & T
+                </div>
+                <div id="content-list">
+                    <ul>
+                        <li>
+                            <a class="page-header-content-list" href="#">PHIM</a>
+                            <ul>
+                                <li><a href="#">Phim Đang Chiếu</a></li>
+                                <li><a href="PhimSapChieu">Phim Sắp Chiếu</a></li> 
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li>
+                            <a class="page-header-content-list" href="#">Rạp Chiếu</a>
+                            <ul>
+                                <li><a href="#">Tất Cả Các Rạp</a></li>
+                                <li><a href="#">Rạp Đặc Biệt</a></li>
+                                <li><a href="#">Rạp Sắp Mở</a></li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="page-header-content-list" href="#">THÀNH VIÊN</a>
+                            <ul>
+                                <li><a href="#">Tài Khoản D&T</a></li>
+                                <li><a href="#">Quyền Lợi</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="page-header-content-list" href="#">CULTUREPLEX</a>
+                            <ul>
+                                <li><a href="#">Quầy Online</a></li>
+                                <li><a href="#">Sự Kiện & Vé Nhóm</a></li>
+                                <li><a href="#">E-CGV</a></li>
+                                <li><a href="#">CGV Restaurant</a></li>
+                                <li><a href="#">Thẻ Quà Tặng</a></li> 
+                            </ul>
                         </li>
                     </ul>
+                    <br class="clear">
+                </div>
+                <div id="header-search">
+                    <div id="header-search-left">
+                        <div id="header_search_left_find">
+                            <input type="text" placeholder="tìm kiếm" maxlength="128" autocomplete="off"
+                            id="header-search-left-submit">
+                            <button id="header_search_left_button"><img id="icon_search" alt=""
+                                src="#"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <br class="clear">
                 </div>
             </div>
-        </nav>
-    </header>
+        </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - aspnetapp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    <footer id="footer">
+            <div class="footer_brand_slide">
+                <div class="max-width">
+                    <ul>
+                        <li><a id="dx" href="#">4dx</a></li>
+                        <li><a id="imax" href="#">imax</a></li>
+                        <li><a id="starium" href="#">starium</a></li>
+                        <li><a id="goldclass" href="#">gold class</a></li>
+                        <li><a id="lamour" href="#">lamour</a></li>
+                        <li><a id="dolby_atmos" href="#">dolby atmos</a></li>
+                        <li><a id="premium_cinema" href="#">premium cinema</a></li>
+                        <li><a id="creen" href="#">screen</a></li>
+                    </ul>
+                    <br class="clear">
+                </div>
+            </div>
+            <div class="footer_content">
+                <div class="max-width">
+                    <div class="footer_content_first">
+                        <h3>CGV Việt Nam</h3>
+                        <ul>
+                            <li><a href="#">Giới Thiệu</a></li>
+                            <li><a href="#">Tiện Ích Online</a></li>
+                            <li><a href="#">Thẻ Quà Tặng</a></li>
+                            <li><a href="#">Tuyển Dụng</a></li>
+                            <li><a href="#">Liên Hệ Quảng Cáo CGV</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content_second">
+                        <h3>Điều khoản sử dụng</h3>
+                        <ul>
+                            <li><a href="#">Điều Khoản Chung</a></li>
+                            <li><a href="#">Điều Khoản Giao Dịch</a></li>
+                            <li><a href="#">Chính Sách Thanh Toán</a></li>
+                            <li><a href="#">Chính Sách Bảo Mật</a></li>
+                            <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_content_third">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <ul class="follow_us">
+                            <li><a class="follow_fb" href="https://www.facebook.com/Thao17521071" target="_blank">1</a></li>
+                            <li><a class="follow_yt" href="#" target="_blank">2</a></li>
+                            <li><a class="follow_line" href="#" target="_blank">3</a></li>
+                            <li><a class="follow_instagram" href="#" target="_blank">4</a></li>
+                            <li><a class="follow_zl" href="#" target="_blank">5</a></li>
+                        </ul>
+                        <br class="clear">
+                        <a class="bo_cong_thuong" target="_blank"
+                        href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=30278">6</a>
+                    </div>
+                    <div class="footer_content_finaly">
+                        <h3> Chăm sóc khách hàng</h3>
+                        <p>
+                            Hotline : 1900 6017
+                            <br>
+                            Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)
+                            <br>
+                            Email hỗ trợ: <a href="hoidap@cgv.vn">hoidap@cgv.vn</a>
+                        </p>
+                    </div>
+                    <br class="clear">
+                </div>
+            </div>
+            <div>
+                <div class="max-width" id="cgv_address">
+                    <div id="CGV_address_logo"></div>
+                    <div id="CGV_address_right">
+                        <h3>CÔNG TY TNHH CJ CGV VIETNAM</h3>
+                        <p>Giấy CNĐKDN: 0303675393, đăng ký lần đầu ngày 31/7/2008, 
+                            đăng ký thay đổi lần thứ 5 ngày 14/10/2015, cấp bởi Sở KHĐT thành phố Hồ Chí Minh.
+                        </p>
+                        <p>
+                            Địa Chỉ: Tầng 2, Rivera Park Saigon - Số 7/28 Thành Thái, P.14, Q.10, TPHCM.
+                        </p>
+                        <p>
+                            Hotline: 1900 6017
+                        </p>
+                        <p>
+                            COPYRIGHT 2017 CJ CGV. All RIGHTS RESERVED .
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
